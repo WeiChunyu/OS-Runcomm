@@ -1,44 +1,44 @@
 channels:
+  - intel
   - defaults
 show_channel_urls: true
-channel_alias: https://mirrors.bfsu.edu.cn/anaconda
+channel_alias: https://mirrors.aliyun.com/anaconda
 default_channels:
-  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main
-  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/free
-  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/r
-  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/pro
-  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2
+  - https://mirrors.aliyun.com/anaconda/pkgs/main
+  - https://mirrors.aliyun.com/anaconda/pkgs/free
+  - https://mirrors.aliyun.com/anaconda/pkgs/r
+  - https://mirrors.aliyun.com/anaconda/pkgs/msys2
 custom_channels:
-  Paddle: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  auto: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  biobakery: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  bioconda: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  c4aarch64: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  caffe2: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  conda-forge: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  deepmodeling: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  dglteam: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  fastai: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  fermi: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  idaholab: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  intel: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  matsci: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  menpo: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  mordred-descriptor: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  msys2: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  numba: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  ohmeta: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  omnia: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  peterjc123: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  plotly: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  psi4: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  pytorch: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  pytorch-test: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  pytorch3d: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  pyviz: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  qiime2: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  rapidsai: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  rdkit: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  simpleitk: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  stackless: https://mirrors.bfsu.edu.cn/anaconda/cloud
-  ursky: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  Paddle: https://mirrors.aliyun.com/anaconda/cloud
+  auto: https://mirrors.aliyun.com/anaconda/cloud
+  biobakery: https://mirrors.aliyun.com/anaconda/cloud
+  bioconda: https://mirrors.aliyun.com/anaconda/cloud
+  c4aarch64: https://mirrors.aliyun.com/anaconda/cloud
+  caffe2: https://mirrors.aliyun.com/anaconda/cloud
+  conda-forge: https://mirrors.aliyun.com/anaconda/cloud
+  deepmodeling: https://mirrors.aliyun.com/anaconda/cloud
+  dglteam: https://mirrors.aliyun.com/anaconda/cloud
+  fastai: https://mirrors.aliyun.com/anaconda/cloud
+  fermi: https://mirrors.aliyun.com/anaconda/cloud
+  idaholab: https://mirrors.aliyun.com/anaconda/cloud
+  intel: https://mirrors.aliyun.com/anaconda/cloud
+  matsci: https://mirrors.aliyun.com/anaconda/cloud
+  menpo: https://mirrors.aliyun.com/anaconda/cloud
+  mordred-descriptor: https://mirrors.aliyun.com/anaconda/cloud
+  msys2: https://mirrors.aliyun.com/anaconda/cloud
+  numba: https://mirrors.aliyun.com/anaconda/cloud
+  ohmeta: https://mirrors.aliyun.com/anaconda/cloud
+  omnia: https://mirrors.aliyun.com/anaconda/cloud
+  peterjc123: https://mirrors.aliyun.com/anaconda/cloud
+  plotly: https://mirrors.aliyun.com/anaconda/cloud
+  psi4: https://mirrors.aliyun.com/anaconda/cloud
+  pytorch: https://mirrors.aliyun.com/anaconda/cloud
+  pytorch-test: https://mirrors.aliyun.com/anaconda/cloud
+  pytorch3d: https://mirrors.aliyun.com/anaconda/cloud
+  pyviz: https://mirrors.aliyun.com/anaconda/cloud
+  qiime2: https://mirrors.aliyun.com/anaconda/cloud
+  rapidsai: https://mirrors.aliyun.com/anaconda/cloud
+  rdkit: https://mirrors.aliyun.com/anaconda/cloud
+  simpleitk: https://mirrors.aliyun.com/anaconda/cloud
+  stackless: https://mirrors.aliyun.com/anaconda/cloud
+  ursky: https://mirrors.aliyun.com/anaconda/cloud
