@@ -7,7 +7,7 @@ DNS 101.6.6.6 2001:da8::666 NTP ntp.tuna.tsinghua.edu.cn
 
 设置方法
 NTP：
-sc config W32Time start = auto
+sc config W32Time start=auto
 net start w32time
 reg add HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /t REG_DWORD /d 0x258 /f
 w32tm /config /manualpeerlist:"ntp1.aliyun.com ntp2.aliyun.com" /syncfromflags:manual /reliable:yes /update
