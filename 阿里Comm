@@ -1,15 +1,66 @@
-阿里云
-DNS 223.5.5.5 223.6.6.6 2400:3200::1 2400:3200:baba::1
-NTP ntp.aliyun.com ntp1.aliyun.com ntp2.aliyun.com
-清华
-DNS 101.6.6.6 2001:da8::666 NTP ntp.tuna.tsinghua.edu.cn
+deb https://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
 
+# deb https://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
 
-设置方法
-NTP：
+channels:
+  - defaults
+show_channel_urls: true
+default_channels:
+  - https://mirrors.aliyun.com/anaconda/pkgs/main
+  - https://mirrors.aliyun.com/anaconda/pkgs/free
+  - https://mirrors.aliyun.com/anaconda/pkgs/r
+  - https://mirrors.aliyun.com/anaconda/pkgs/msys2
+custom_channels:
+  Paddle: https://mirrors.aliyun.com/anaconda/cloud
+  auto: https://mirrors.aliyun.com/anaconda/cloud
+  biobakery: https://mirrors.aliyun.com/anaconda/cloud
+  bioconda: https://mirrors.aliyun.com/anaconda/cloud
+  c4aarch64: https://mirrors.aliyun.com/anaconda/cloud
+  caffe2: https://mirrors.aliyun.com/anaconda/cloud
+  conda-forge: https://mirrors.aliyun.com/anaconda/cloud
+  deepmodeling: https://mirrors.aliyun.com/anaconda/cloud
+  dglteam: https://mirrors.aliyun.com/anaconda/cloud
+  fastai: https://mirrors.aliyun.com/anaconda/cloud
+  fermi: https://mirrors.aliyun.com/anaconda/cloud
+  idaholab: https://mirrors.aliyun.com/anaconda/cloud
+  intel: https://mirrors.aliyun.com/anaconda/cloud
+  matsci: https://mirrors.aliyun.com/anaconda/cloud
+  menpo: https://mirrors.aliyun.com/anaconda/cloud
+  mordred-descriptor: https://mirrors.aliyun.com/anaconda/cloud
+  msys2: https://mirrors.aliyun.com/anaconda/cloud
+  numba: https://mirrors.aliyun.com/anaconda/cloud
+  ohmeta: https://mirrors.aliyun.com/anaconda/cloud
+  omnia: https://mirrors.aliyun.com/anaconda/cloud
+  peterjc123: https://mirrors.aliyun.com/anaconda/cloud
+  plotly: https://mirrors.aliyun.com/anaconda/cloud
+  psi4: https://mirrors.aliyun.com/anaconda/cloud
+  pytorch: https://mirrors.aliyun.com/anaconda/cloud
+  pytorch-test: https://mirrors.aliyun.com/anaconda/cloud
+  pytorch3d: https://mirrors.aliyun.com/anaconda/cloud
+  pyviz: https://mirrors.aliyun.com/anaconda/cloud
+  qiime2: https://mirrors.aliyun.com/anaconda/cloud
+  rapidsai: https://mirrors.aliyun.com/anaconda/cloud
+  rdkit: https://mirrors.aliyun.com/anaconda/cloud
+  simpleitk: https://mirrors.aliyun.com/anaconda/cloud
+  stackless: https://mirrors.aliyun.com/anaconda/cloud
+  ursky: https://mirrors.aliyun.com/anaconda/cloud
+
+pip config set global.index-url https://mirrors.cloud.aliyuncs.com/pypi/simple
+
 sc config W32Time start=auto
 net start w32time
 reg add HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /t REG_DWORD /d 0x258 /f
 w32tm /config /manualpeerlist:"ntp1.aliyun.com ntp2.aliyun.com" /syncfromflags:manual /reliable:yes /update
 
 MKL_DEBUG_CPU_TYPE=5
+
+DNS 223.5.5.5 223.6.6.6 2400:3200::1 2400:3200:baba::1
+NTP ntp1.aliyun.com ntp2.aliyun.com
