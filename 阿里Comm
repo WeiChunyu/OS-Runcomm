@@ -54,6 +54,7 @@ custom_channels:
   ursky: https://mirrors.aliyun.com/anaconda/cloud
 
 pip config set global.index-url https://mirrors.cloud.aliyuncs.com/pypi/simple
+pip config set global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple
 
 sc config W32Time start=auto
 net start w32time
