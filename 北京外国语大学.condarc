@@ -1,6 +1,6 @@
 channels:
-  - intel
   - defaults
+  - intel
 show_channel_urls: true
 channel_alias: https://mirrors6.bfsu.edu.cn/anaconda
 default_channels:
