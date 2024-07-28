@@ -1,45 +1,47 @@
+mirror.bjtu.edu.cn #北京交通大学
+mirrors.zju.edu.cn #浙江大学
 channels:
   - defaults
   - intel
 show_channel_urls: true
-channel_alias: https://mirrors6.bfsu.edu.cn/anaconda
+channel_alias: https://mirrors.zju.edu.cn/anaconda
 default_channels:
-  - https://mirrors6.bfsu.edu.cn/anaconda/pkgs/main
-  - https://mirrors6.bfsu.edu.cn/anaconda/pkgs/free
-  - https://mirrors6.bfsu.edu.cn/anaconda/pkgs/r
-  - https://mirrors6.bfsu.edu.cn/anaconda/pkgs/msys2
+  - https://mirrors.zju.edu.cn/anaconda/pkgs/main
+  - https://mirrors.zju.edu.cn/anaconda/pkgs/free
+  - https://mirrors.zju.edu.cn/anaconda/pkgs/r
+  - https://mirrors.zju.edu.cn/anaconda/pkgs/msys2
 custom_channels:
-  MindSpore: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  Paddle: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  auto: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  biobakery: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  bioconda: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  c4aarch64: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  caffe2: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  conda-forge: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  deepmodeling: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  dglteam: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  fastai: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  fermi: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  idaholab: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  intel: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  matsci: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  menpo: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  mordred-descriptor: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  msys2: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  numba: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  ohmeta: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  omnia: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  peterjc123: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  plotly: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  psi4: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  pytorch: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  pytorch-test: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  pytorch3d: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  pyviz: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  qiime2: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  rapidsai: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  rdkit: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  simpleitk: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  stackless: https://mirrors6.bfsu.edu.cn/anaconda/cloud
-  ursky: https://mirrors6.bfsu.edu.cn/anaconda/cloud
+  MindSpore: https://mirrors.zju.edu.cn/anaconda/cloud
+  Paddle: https://mirrors.zju.edu.cn/anaconda/cloud
+  auto: https://mirrors.zju.edu.cn/anaconda/cloud
+  biobakery: https://mirrors.zju.edu.cn/anaconda/cloud
+  bioconda: https://mirrors.zju.edu.cn/anaconda/cloud
+  c4aarch64: https://mirrors.zju.edu.cn/anaconda/cloud
+  caffe2: https://mirrors.zju.edu.cn/anaconda/cloud
+  conda-forge: https://mirrors.zju.edu.cn/anaconda/cloud
+  deepmodeling: https://mirrors.zju.edu.cn/anaconda/cloud
+  dglteam: https://mirrors.zju.edu.cn/anaconda/cloud
+  fastai: https://mirrors.zju.edu.cn/anaconda/cloud
+  fermi: https://mirrors.zju.edu.cn/anaconda/cloud
+  idaholab: https://mirrors.zju.edu.cn/anaconda/cloud
+  intel: https://mirrors.zju.edu.cn/anaconda/cloud
+  matsci: https://mirrors.zju.edu.cn/anaconda/cloud
+  menpo: https://mirrors.zju.edu.cn/anaconda/cloud
+  mordred-descriptor: https://mirrors.zju.edu.cn/anaconda/cloud
+  msys2: https://mirrors.zju.edu.cn/anaconda/cloud
+  numba: https://mirrors.zju.edu.cn/anaconda/cloud
+  ohmeta: https://mirrors.zju.edu.cn/anaconda/cloud
+  omnia: https://mirrors.zju.edu.cn/anaconda/cloud
+  peterjc123: https://mirrors.zju.edu.cn/anaconda/cloud
+  plotly: https://mirrors.zju.edu.cn/anaconda/cloud
+  psi4: https://mirrors.zju.edu.cn/anaconda/cloud
+  pytorch: https://mirrors.zju.edu.cn/anaconda/cloud
+  pytorch-test: https://mirrors.zju.edu.cn/anaconda/cloud
+  pytorch3d: https://mirrors.zju.edu.cn/anaconda/cloud
+  pyviz: https://mirrors.zju.edu.cn/anaconda/cloud
+  qiime2: https://mirrors.zju.edu.cn/anaconda/cloud
+  rapidsai: https://mirrors.zju.edu.cn/anaconda/cloud
+  rdkit: https://mirrors.zju.edu.cn/anaconda/cloud
+  simpleitk: https://mirrors.zju.edu.cn/anaconda/cloud
+  stackless: https://mirrors.zju.edu.cn/anaconda/cloud
+  ursky: https://mirrors.zju.edu.cn/anaconda/cloud
