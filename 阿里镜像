@@ -1,0 +1,46 @@
+sc config W32Time start=auto
+net start w32time
+reg add HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /t REG_DWORD /d 0x258 /f
+w32tm /config /manualpeerlist:"ntp1.aliyun.com ntp2.aliyun.com" /syncfromflags:manual /reliable:yes /update
+NTP: ntp.aliyun.com，ntp1.aliyun.com，ntp2.aliyun.com
+DNS: 223.5.5.5 223.6.6.6 2400:3200::1 2400:3200:baba::1
+
+~/.pip/pip.conf
+[global]
+index-url = http://mirrors.aliyun.com/pypi/simple/
+
+[install]
+trusted-host=mirrors.aliyun.com
+
+Ubuntu 22.04 /etc/apt/sources.list
+deb https://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+
+deb https://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+
+deb https://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+
+# deb https://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
+
+deb https://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+
+
+Ubuntu 24.04 /etc/apt/sources.list
+deb https://mirrors.aliyun.com/ubuntu/ noble main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ noble main restricted universe multiverse
+
+deb https://mirrors.aliyun.com/ubuntu/ noble-security main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ noble-security main restricted universe multiverse
+
+deb https://mirrors.aliyun.com/ubuntu/ noble-updates main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ noble-updates main restricted universe multiverse
+
+# deb https://mirrors.aliyun.com/ubuntu/ noble-proposed main restricted universe multiverse
+# deb-src https://mirrors.aliyun.com/ubuntu/ noble-proposed main restricted universe multiverse
+
+deb https://mirrors.aliyun.com/ubuntu/ noble-backports main restricted universe multiverse
+deb-src https://mirrors.aliyun.com/ubuntu/ noble-backports main restricted universe multiverse
