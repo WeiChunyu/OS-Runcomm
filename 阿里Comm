@@ -32,7 +32,7 @@ pip config set global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple
 sc config W32Time start=auto
 net start w32time
 reg add HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /t REG_DWORD /d 0x258 /f
-w32tm /config /manualpeerlist:"ntp1.aliyun.com ntp2.aliyun.com" /syncfromflags:manual /reliable:yes /update
+w32tm /config /manualpeerlist:"ntp.aliyun.com ntp.tencent.com" /syncfromflags:manual /reliable:yes /update
 
 MKL_DEBUG_CPU_TYPE=5
 
