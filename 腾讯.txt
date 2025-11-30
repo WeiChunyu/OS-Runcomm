@@ -1,0 +1,11 @@
+Public DNS 免费版服务 IPv4 地址：119.29.29.29。
+Public DNS 免费版服务 IPv6 地址：2402:4e00:: 和 2402:4e00:1::。
+DNS over HTTPS（DoH）地址：https://doh.pub/dns-query。
+DNS over TLS（DoT） 地址：dot.pub。
+外网 NTP 服务器
+ntp.tencent.com
+ntp1.tencent.com
+ntp2.tencent.com
+ntp3.tencent.com
+ntp4.tencent.com
+ntp5.tencent.com
