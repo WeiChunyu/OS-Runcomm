@@ -11,6 +11,14 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 Ubuntu 2404
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] https://mirrors.cernet.edu.cn/ros2/ubuntu noble main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
-
+sudo apt install python3-rosdep2
+sudo rosdep init
+rosdep update
+# 为 rosdep update 换源
+export ROSDISTRO_INDEX_URL=https://mirrors.cernet.edu.cn/rosdistro/index-v4.yaml
+rosdep update
+# 每次 rosdep update 之前，均需要增加该环境变量
+# 为了持久化该设定，可以将其写入 .bashrc 中，例如
+echo 'export ROSDISTRO_INDEX_URL=https://mirrors.cernet.edu.cn/rosdistro/index-v4.yaml' >> ~/.bashrc
 
 
