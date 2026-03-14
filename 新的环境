@@ -4,4 +4,13 @@ http://mirrors.aliyun.com/pypi/simple/
 https://mirrors.huaweicloud.com/repository/pypi/simple 
 https://mirrors.bfsu.edu.cn/pypi/web/simple"
 
+ROS2
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
+Ubuntu 2204
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] https://mirrors.cernet.edu.cn/ros2/ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+Ubuntu 2404
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] https://mirrors.cernet.edu.cn/ros2/ubuntu noble main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+
+
 
