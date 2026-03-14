@@ -21,4 +21,18 @@ rosdep update
 # 为了持久化该设定，可以将其写入 .bashrc 中，例如
 echo 'export ROSDISTRO_INDEX_URL=https://mirrors.cernet.edu.cn/rosdistro/index-v4.yaml' >> ~/.bashrc
 
+腾讯
+Public DNS 免费版服务 IPv4 地址：119.29.29.29。
+Public DNS 免费版服务 IPv6 地址：2402:4e00:: 和 2402:4e00:1::。
+DNS over HTTPS（DoH）地址：https://doh.pub/dns-query。
+DNS over TLS（DoT） 地址：dot.pub。
+NTP ntp.tencent.com ntp1.tencent.com
 
+阿里
+DNS 223.5.5.5 223.6.6.6 2400:3200::1 2400:3200:baba::1
+NTP ntp1.aliyun.com ntp2.aliyun.com
+
+sc config W32Time start=auto
+net start w32time
+reg add HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient /v SpecialPollInterval /t REG_DWORD /d 0x258 /f
+w32tm /config /manualpeerlist:"ntp.aliyun.com ntp.tencent.com" /syncfromflags:manual /reliable:yes /update
