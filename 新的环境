@@ -61,3 +61,7 @@ wget -qO- https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo tee /etc
 sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-noble.list https://packages.lunarg.com/vulkan/lunarg-vulkan-noble.list
 sudo apt update
 sudo apt install vulkan-sdk
+
+
+https://repo.radeon.com/amf/
+https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/
