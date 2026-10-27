@@ -17,6 +17,28 @@ rosdep update
 # 为了持久化该设定，可以将其写入 .bashrc 中，例如
 echo 'export ROSDISTRO_INDEX_URL=https://mirrors.cernet.edu.cn/rosdistro/index-v4.yaml' >> ~/.bashrc
 
+
+DOcker
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://mirrors.cernet.edu.cn/docker-ce/linux/ubuntu
+Suites: $(. /etc/os-release && echo "$VERSION_CODENAME")
+Components: stable
+Signed-By: /etc/apt/keyrings/docker.gpg
+EOF
+Types: deb
+URIs: https://mirrors.cernet.edu.cn/docker-ce/linux/ubuntu
+Suites: noble
+Components: stable
+Signed-By: /etc/apt/keyrings/docker.gpg
+
+sudo apt update && sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo usermod -a -G render,video,docker $LOGNAME
+
 腾讯
 Public DNS 免费版服务 IPv4 地址：119.29.29.29。
 Public DNS 免费版服务 IPv6 地址：2402:4e00:: 和 2402:4e00:1::。
