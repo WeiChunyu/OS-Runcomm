@@ -18,6 +18,12 @@ rosdep update
 echo 'export ROSDISTRO_INDEX_URL=https://mirrors.cernet.edu.cn/rosdistro/index-v4.yaml' >> ~/.bashrc
 
 
+
+npm
+npm config set registry http://mirrors.tencent.com/npm/
+npm config set registry http://registry.npmmirror.com
+npm config get registry
+
 DOcker
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
