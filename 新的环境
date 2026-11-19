@@ -93,3 +93,11 @@ sudo apt install vulkan-sdk
 
 https://repo.radeon.com/amf/
 https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/
+
+wine
+sudo apt update
+sudo apt install -y winetricks fonts-wqy-microhei fonts-wqy-zenhei
+export LANG=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
+winetricks -q fakechinese
+wine aDrive-6.9.3.exe
