@@ -96,7 +96,7 @@ https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/
 
 wine
 sudo apt update
-sudo apt install -y winetricks fonts-wqy-microhei fonts-wqy-zenhei
+sudo apt install -y winetricks winbind fonts-wqy-microhei fonts-wqy-zenhei
 export LANG=zh_CN.UTF-8
 export LC_ALL=zh_CN.UTF-8
 winetricks -q fakechinese
